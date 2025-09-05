@@ -1,8 +1,13 @@
-# RAIInet  
+# RAIINet  
 
 A full-featured implementation of the **RAIInet** game (CS246, Fall 2024). This project was completed as part of the University of Waterloo’s CS246 course.  
 
 We achieved **full marks** on the project with a complete and polished implementation, making use of **modern C++ practices (smart pointers, RAII, and no memory leaks)** as well as an **Observer design pattern** to synchronize the graphical and text displays.  
+
+---
+
+## Game Demo
+https://www.youtube.com/watch?v=tQVERa7B7sA&ab_channel=Prabh
 
 ---
 
@@ -49,7 +54,7 @@ Stun: `ability 5 <link>`, this ability will stun an opponent's link without them
 Barrier: `ability 6 x y`, where x and y are coordinates representing a space on the board (rows/cols begin at 0), where the barrier is placed
 - Example: `ability 6 3 3` would place a firewall link on coordinates 3,3. When any link tries moving onto the barrier, the link remains in the same position, but the barrier collapses and is removed from the board
 
-Strength Boost: `ability 7 <link>`, this ability will make the link chosen have a strength of 5 (strengths are normally 1-4), so this link will win any battle it engages in
+Strength Boost: `ability 7 <link>`, this ability will give the link specified a strength of 5 (strengths are normally 1-4), so this link will win any battle it engages in
 - Example: `ability 0 b` would make it so the b link now has a strength of 5 for the rest of the game
 
 ---
@@ -106,6 +111,7 @@ Custom Ability Usage with graphical display
 
 Fully customized game with graphical display
 ./raiinet -link1 sampleLink1Placement -link2 sampleLink2Placement -ability1 sampleAbilities1 -ability2 sampleAbilities2 -graphics
+
 
 
 
