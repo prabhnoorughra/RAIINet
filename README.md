@@ -94,9 +94,13 @@ Beyond the technical learning, this project helped us **grow as collaborators**,
 
 ## How to Run  
 
-### Compile  
+### Compile and Run base version of game 
 ```bash
-g++20 -std=c++20 -Wall -Werror *.cc -o raiinet -lX11
+cd src
+make
+mv raiinet ..
+cd ..
+./raiinet
 
 
 ### Run Examples
@@ -111,6 +115,7 @@ Custom Ability Usage with graphical display
 
 Fully customized game with graphical display
 ./raiinet -link1 sampleLink1Placement -link2 sampleLink2Placement -ability1 sampleAbilities1 -ability2 sampleAbilities2 -graphics
+
 
 
 
